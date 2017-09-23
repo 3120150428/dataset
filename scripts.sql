@@ -1,0 +1,700 @@
+-- select count(*) from simpletermarguments where sim=0;
+-- select count(*) from simpletermarguments where sim>0 and sim<0.1;
+-- select count(*) from simpletermarguments where sim>=0.1 and sim<0.2;
+-- select count(*) from simpletermarguments where sim>=0.2 and sim<0.3;
+-- select count(*) from simpletermarguments where sim>=0.3 and sim<0.4;
+-- select count(*) from simpletermarguments where sim>=0.4 and sim<0.5;
+-- select count(*) from simpletermarguments where sim>=0.5 and sim<0.6;
+-- select count(*) from simpletermarguments where sim>=0.6 and sim<0.7;
+-- select count(*) from simpletermarguments where sim>=0.7 and sim<0.8;
+-- select count(*) from simpletermarguments where sim>=0.8 and sim<0.9;
+-- select count(*) from simpletermarguments where sim>=0.9 and sim<1;
+-- select count(*) from simpletermarguments where sim=1;
+-- select count(*) from simpletermarguments;
+
+-- select count(*) from simpleprimitivearguments where sim=0;
+-- select count(*) from simpleprimitivearguments where sim>0 and sim<0.1;
+-- select count(*) from simpleprimitivearguments where sim>=0.1 and sim<0.2;
+-- select count(*) from simpleprimitivearguments where sim>=0.2 and sim<0.3;
+-- select count(*) from simpleprimitivearguments where sim>=0.3 and sim<0.4;
+-- select count(*) from simpleprimitivearguments where sim>=0.4 and sim<0.5;
+-- select count(*) from simpleprimitivearguments where sim>=0.5 and sim<0.6;
+-- select count(*) from simpleprimitivearguments where sim>=0.6 and sim<0.7;
+-- select count(*) from simpleprimitivearguments where sim>=0.7 and sim<0.8;
+-- select count(*) from simpleprimitivearguments where sim>=0.8 and sim<0.9;
+-- select count(*) from simpleprimitivearguments where sim>=0.9 and sim<1;
+-- select count(*) from simpleprimitivearguments where sim=1;
+-- -- select count(*) from simpleprimitivearguments;
+-- 
+-- 
+-- select count(*) from simpleapiarguments where sim=0;
+-- select count(*) from simpleapiarguments where sim>0 and sim<0.1;
+-- select count(*) from simpleapiarguments where sim>=0.1 and sim<0.2;
+-- select count(*) from simpleapiarguments where sim>=0.2 and sim<0.3;
+-- select count(*) from simpleapiarguments where sim>=0.3 and sim<0.4;
+-- select count(*) from simpleapiarguments where sim>=0.4 and sim<0.5;
+-- select count(*) from simpleapiarguments where sim>=0.5 and sim<0.6;
+-- select count(*) from simpleapiarguments where sim>=0.6 and sim<0.7;
+-- select count(*) from simpleapiarguments where sim>=0.7 and sim<0.8;
+-- select count(*) from simpleapiarguments where sim>=0.8 and sim<0.9;
+-- select count(*) from simpleapiarguments where sim>=0.9 and sim<1;
+-- select count(*) from simpleapiarguments where sim=1;
+-- select count(*) from simpleapiarguments;
+
+-- delete from methodarguments 
+
+-- delete from fieldinvocations;
+
+-- select count(*) from overriddens
+
+-- select sum(parameterNum) from apideclarations
+-- select max(parameterNum) from apideclarations#16
+#apideclarations: java/javax/org包下的方法声明
+-- select distinct(projectName) from invocations
+-- select sum(parameterNum) from invocations
+-- create table methodDeclarations select * from apideclarations where 1=0
+-- select count(*) from invocations;#562556
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName1,parameterType1,parameterName1,argWords1,paraWords1,methodName,className,packageName,superClassName,superPackageName,candidateSize1,termBasedSim1,maxTermBasedSim1,editBasedSim1,maxEditBasedSim1,jeroBasedSim1,maxJeroBasedSim1 from invocations where argumentName1!=''
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName2,parameterType2,parameterName2,argWords2,paraWords2,methodName,className,packageName,superClassName,superPackageName,candidateSize2,termBasedSim2,maxTermBasedSim2,editBasedSim2,maxEditBasedSim2,jeroBasedSim2,maxJeroBasedSim2 from invocations where argumentName2!=''
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName3,parameterType3,parameterName3,argWords3,paraWords3,methodName,className,packageName,superClassName,superPackageName,candidateSize3,termBasedSim3,maxTermBasedSim3,editBasedSim3,maxEditBasedSim3,jeroBasedSim3,maxJeroBasedSim3 from invocations where argumentName3!=''
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName4,parameterType4,parameterName4,argWords4,paraWords4,methodName,className,packageName,superClassName,superPackageName,candidateSize4,termBasedSim4,maxTermBasedSim4,editBasedSim4,maxEditBasedSim4,jeroBasedSim4,maxJeroBasedSim4 from invocations where argumentName4!=''
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName5,parameterType5,parameterName5,argWords5,paraWords5,methodName,className,packageName,superClassName,superPackageName,candidateSize5,termBasedSim5,maxTermBasedSim5,editBasedSim5,maxEditBasedSim5,jeroBasedSim5,maxJeroBasedSim5 from invocations where argumentName5!=''
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName6,parameterType6,parameterName6,argWords6,paraWords6,methodName,className,packageName,superClassName,superPackageName,candidateSize6,termBasedSim6,maxTermBasedSim6,editBasedSim6,maxEditBasedSim6,jeroBasedSim6,maxJeroBasedSim6 from invocations where argumentName6!='' 
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName7,parameterType7,parameterName7,argWords7,paraWords7,methodName,className,packageName,superClassName,superPackageName,candidateSize7,termBasedSim7,maxTermBasedSim7,editBasedSim7,maxEditBasedSim7,jeroBasedSim7,maxJeroBasedSim7 from invocations where argumentName7!=''
+-- select count(*) from simpletermarguments; 
+-- select count(*) from simpletermarguments where sim=0;
+-- select count(*) from simpletermarguments where sim>0 and sim<0.1;
+-- select count(*) from simpletermarguments where sim>=0.1 and sim<0.2;
+-- select count(*) from simpletermarguments where sim>=0.2 and sim<0.3;
+-- select count(*) from simpletermarguments where sim>=0.3 and sim<0.4;
+-- select count(*) from simpletermarguments where sim>=0.4 and sim<0.5;
+-- select count(*) from simpletermarguments where sim>=0.5 and sim<0.6;
+-- select count(*) from simpletermarguments where sim>=0.6 and sim<0.7;
+-- select count(*) from simpletermarguments where sim>=0.7 and sim<0.8;
+-- select count(*) from simpletermarguments where sim>=0.8 and sim<0.9;
+-- select count(*) from simpletermarguments where sim>=0.9 and sim<1;
+-- select count(*) from simpletermarguments where sim=1;
+
+-- select count(*) from invocations;
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName1,parameterType1,parameterName1,argWords1,paraWords1,methodName,className,packageName,superClassName,superPackageName,candidateSize1,termBasedSim1,maxTermBasedSim1,editBasedSim1,maxEditBasedSim1,jeroBasedSim1,maxJeroBasedSim1 from invocations where argumentName1!='';
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName2,parameterType2,parameterName2,argWords2,paraWords2,methodName,className,packageName,superClassName,superPackageName,candidateSize2,termBasedSim2,maxTermBasedSim2,editBasedSim2,maxEditBasedSim2,jeroBasedSim2,maxJeroBasedSim2 from invocations where argumentName2!='';
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName3,parameterType3,parameterName3,argWords3,paraWords3,methodName,className,packageName,superClassName,superPackageName,candidateSize3,termBasedSim3,maxTermBasedSim3,editBasedSim3,maxEditBasedSim3,jeroBasedSim3,maxJeroBasedSim3 from invocations where argumentName3!='';
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName4,parameterType4,parameterName4,argWords4,paraWords4,methodName,className,packageName,superClassName,superPackageName,candidateSize4,termBasedSim4,maxTermBasedSim4,editBasedSim4,maxEditBasedSim4,jeroBasedSim4,maxJeroBasedSim4 from invocations where argumentName4!='';
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName5,parameterType5,parameterName5,argWords5,paraWords5,methodName,className,packageName,superClassName,superPackageName,candidateSize5,termBasedSim5,maxTermBasedSim5,editBasedSim5,maxEditBasedSim5,jeroBasedSim5,maxJeroBasedSim5 from invocations where argumentName5!='';
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName6,parameterType6,parameterName6,argWords6,paraWords6,methodName,className,packageName,superClassName,superPackageName,candidateSize6,termBasedSim6,maxTermBasedSim6,editBasedSim6,maxEditBasedSim6,jeroBasedSim6,maxJeroBasedSim6 from invocations where argumentName6!='' ;
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName7,parameterType7,parameterName7,argWords7,paraWords7,methodName,className,packageName,superClassName,superPackageName,candidateSize7,termBasedSim7,maxTermBasedSim7,editBasedSim7,maxEditBasedSim7,jeroBasedSim7,maxJeroBasedSim7 from invocations where argumentName7!='';
+-- 
+-- select count(*) from simpletermarguments0830
+-- select * from simpleinvocations order by projectName;
+-- 
+-- CREATE TABLE methodarguments (
+--   `id` int(11) NOT NULL AUTO_INCREMENT,
+--   `parameterNum` int(11) DEFAULT NULL,
+--   `argumentName` varchar(100) DEFAULT NULL,
+--   `argumentType` varchar(100) DEFAULT NULL,
+--   `parameterName` varchar(100) DEFAULT NULL,
+--   `argWords` int(11) DEFAULT NULL,
+--   `paraWords` int(11) DEFAULT NULL,
+--   `methodName` varchar(200) DEFAULT NULL,
+--   `className` varchar(200) DEFAULT NULL,
+--   `packageName` varchar(200) DEFAULT NULL,
+--   `superClassName` varchar(200) DEFAULT NULL,
+--   `superPackageName` varchar(200) DEFAULT NULL,
+--   `candidatesize` int(11) DEFAULT NULL,
+--   `sim` double DEFAULT NULL,
+--   `maxsim` double DEFAULT NULL,
+--   `edit` double DEFAULT NULL,
+--   `maxedit` double DEFAULT NULL,
+--   `jero` double DEFAULT NULL,
+--   `maxjero` double DEFAULT NULL,
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName1,parameterType1,parameterName1,argWords1,paraWords1,methodName,className,packageName,superClassName,superPackageName,candidateSize1,termBasedSim1,maxTermBasedSim1,editBasedSim1,maxEditBasedSim1,jeroBasedSim1,maxJeroBasedSim1 from simpleinvocations where argumentName1!='';
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName2,parameterType2,parameterName2,argWords2,paraWords2,methodName,className,packageName,superClassName,superPackageName,candidateSize2,termBasedSim2,maxTermBasedSim2,editBasedSim2,maxEditBasedSim2,jeroBasedSim2,maxJeroBasedSim2 from simpleinvocations where argumentName2!='';
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName3,parameterType3,parameterName3,argWords3,paraWords3,methodName,className,packageName,superClassName,superPackageName,candidateSize3,termBasedSim3,maxTermBasedSim3,editBasedSim3,maxEditBasedSim3,jeroBasedSim3,maxJeroBasedSim3 from simpleinvocations where argumentName3!='';
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName4,parameterType4,parameterName4,argWords4,paraWords4,methodName,className,packageName,superClassName,superPackageName,candidateSize4,termBasedSim4,maxTermBasedSim4,editBasedSim4,maxEditBasedSim4,jeroBasedSim4,maxJeroBasedSim4 from simpleinvocations where argumentName4!='';
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName5,parameterType5,parameterName5,argWords5,paraWords5,methodName,className,packageName,superClassName,superPackageName,candidateSize5,termBasedSim5,maxTermBasedSim5,editBasedSim5,maxEditBasedSim5,jeroBasedSim5,maxJeroBasedSim5 from simpleinvocations where argumentName5!='';
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName6,parameterType6,parameterName6,argWords6,paraWords6,methodName,className,packageName,superClassName,superPackageName,candidateSize6,termBasedSim6,maxTermBasedSim6,editBasedSim6,maxEditBasedSim6,jeroBasedSim6,maxJeroBasedSim6 from simpleinvocations where argumentName6!='' ;
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+-- --  select parameterNum,argumentName7,parameterType7,parameterName7,argWords7,paraWords7,methodName,className,packageName,superClassName,superPackageName,candidateSize7,termBasedSim7,maxTermBasedSim7,editBasedSim7,maxEditBasedSim7,jeroBasedSim7,maxJeroBasedSim7 from simpleinvocations where argumentName7!='';
+-- 
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName1,parameterType1,parameterName1,argWords1,paraWords1,methodName,className,packageName,superClassName,superPackageName,candidateSize1,termBasedSim1,maxTermBasedSim1,editBasedSim1,maxEditBasedSim1,jeroBasedSim1,maxJeroBasedSim1 from simpleinvocations where argumentName1!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName2,parameterType2,parameterName2,argWords2,paraWords2,methodName,className,packageName,superClassName,superPackageName,candidateSize2,termBasedSim2,maxTermBasedSim2,editBasedSim2,maxEditBasedSim2,jeroBasedSim2,maxJeroBasedSim2 from simpleinvocations where argumentName2!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName3,parameterType3,parameterName3,argWords3,paraWords3,methodName,className,packageName,superClassName,superPackageName,candidateSize3,termBasedSim3,maxTermBasedSim3,editBasedSim3,maxEditBasedSim3,jeroBasedSim3,maxJeroBasedSim3 from simpleinvocations where argumentName3!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName4,parameterType4,parameterName4,argWords4,paraWords4,methodName,className,packageName,superClassName,superPackageName,candidateSize4,termBasedSim4,maxTermBasedSim4,editBasedSim4,maxEditBasedSim4,jeroBasedSim4,maxJeroBasedSim4 from simpleinvocations where argumentName4!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName5,parameterType5,parameterName5,argWords5,paraWords5,methodName,className,packageName,superClassName,superPackageName,candidateSize5,termBasedSim5,maxTermBasedSim5,editBasedSim5,maxEditBasedSim5,jeroBasedSim5,maxJeroBasedSim5 from simpleinvocations where argumentName5!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName6,parameterType6,parameterName6,argWords6,paraWords6,methodName,className,packageName,superClassName,superPackageName,candidateSize6,termBasedSim6,maxTermBasedSim6,editBasedSim6,maxEditBasedSim6,jeroBasedSim6,maxJeroBasedSim6 from simpleinvocations where argumentName6!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into simpletermarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName7,parameterType7,parameterName7,argWords7,paraWords7,methodName,className,packageName,superClassName,superPackageName,candidateSize7,termBasedSim7,maxTermBasedSim7,editBasedSim7,maxEditBasedSim7,jeroBasedSim7,maxJeroBasedSim7 from simpleinvocations where argumentName7!='' and projectName in('SWRefactor','InsRefactor');
+--  select count(*) from invocations
+
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName1,parameterType1,parameterName1,argWords1,paraWords1,methodName,className,packageName,superClassName,superPackageName,candidateSize1,termBasedSim1,maxTermBasedSim1,editBasedSim1,maxEditBasedSim1,jeroBasedSim1,maxJeroBasedSim1 from invocations where argumentName1!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName2,parameterType2,parameterName2,argWords2,paraWords2,methodName,className,packageName,superClassName,superPackageName,candidateSize2,termBasedSim2,maxTermBasedSim2,editBasedSim2,maxEditBasedSim2,jeroBasedSim2,maxJeroBasedSim2 from invocations where argumentName2!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName3,parameterType3,parameterName3,argWords3,paraWords3,methodName,className,packageName,superClassName,superPackageName,candidateSize3,termBasedSim3,maxTermBasedSim3,editBasedSim3,maxEditBasedSim3,jeroBasedSim3,maxJeroBasedSim3 from invocations where argumentName3!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName4,parameterType4,parameterName4,argWords4,paraWords4,methodName,className,packageName,superClassName,superPackageName,candidateSize4,termBasedSim4,maxTermBasedSim4,editBasedSim4,maxEditBasedSim4,jeroBasedSim4,maxJeroBasedSim4 from invocations where argumentName4!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName5,parameterType5,parameterName5,argWords5,paraWords5,methodName,className,packageName,superClassName,superPackageName,candidateSize5,termBasedSim5,maxTermBasedSim5,editBasedSim5,maxEditBasedSim5,jeroBasedSim5,maxJeroBasedSim5 from invocations where argumentName5!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName6,parameterType6,parameterName6,argWords6,paraWords6,methodName,className,packageName,superClassName,superPackageName,candidateSize6,termBasedSim6,maxTermBasedSim6,editBasedSim6,maxEditBasedSim6,jeroBasedSim6,maxJeroBasedSim6 from invocations where argumentName6!='' and projectName in('SWRefactor','InsRefactor');
+-- insert into termarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName7,parameterType7,parameterName7,argWords7,paraWords7,methodName,className,packageName,superClassName,superPackageName,candidateSize7,termBasedSim7,maxTermBasedSim7,editBasedSim7,maxEditBasedSim7,jeroBasedSim7,maxJeroBasedSim7 from invocations where argumentName7!='' and projectName in('SWRefactor','InsRefactor');
+-- select count(*) from termarguments;
+
+
+-- select * from invocations where projectName in('InsRefactor','SWRefactor')  and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- drop table test;
+-- CREATE TABLE fieldinvocations (
+--   `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT,
+--   `parameterNum` int(11) DEFAULT NULL,
+--   `argumentName1` varchar(100) DEFAULT NULL,
+--   `argumentType1` varchar(100) DEFAULT NULL,
+--   `argumentName2` varchar(100) DEFAULT NULL,
+--   `argumentType2` varchar(100) DEFAULT NULL,
+--   `argumentName3` varchar(100) DEFAULT NULL,
+--   `argumentType3` varchar(100) DEFAULT NULL,
+--   `argumentName4` varchar(100) DEFAULT NULL,
+--   `argumentType4` varchar(100) DEFAULT NULL,
+--   `argumentName5` varchar(100) DEFAULT NULL,
+--   `argumentType5` varchar(100) DEFAULT NULL,
+--   `argumentName6` varchar(100) DEFAULT NULL,
+--   `argumentType6` varchar(100) DEFAULT NULL,
+--   `argumentName7` varchar(100) DEFAULT NULL,
+--   `argumentType7` varchar(100) DEFAULT NULL,
+--   `parameterName1` varchar(100) DEFAULT NULL,
+--   `parameterType1` varchar(100) DEFAULT NULL,
+--   `parameterName2` varchar(100) DEFAULT NULL,
+--   `parameterType2` varchar(100) DEFAULT NULL,
+--   `parameterName3` varchar(100) DEFAULT NULL,
+--   `parameterType3` varchar(100) DEFAULT NULL,
+--   `parameterName4` varchar(100) DEFAULT NULL,
+--   `parameterType4` varchar(100) DEFAULT NULL,
+--   `parameterName5` varchar(100) DEFAULT NULL,
+--   `parameterType5` varchar(100) DEFAULT NULL,
+--   `parameterName6` varchar(100) DEFAULT NULL,
+--   `parameterType6` varchar(100) DEFAULT NULL,
+--   `parameterName7` varchar(100) DEFAULT NULL,
+--   `parameterType7` varchar(100) DEFAULT NULL,
+--   `methodName` varchar(200) DEFAULT NULL,
+--   `className` varchar(200) DEFAULT NULL,
+--   `packageName` varchar(200) DEFAULT NULL,
+--   `superClassName` varchar(200) DEFAULT NULL,
+--   `superPackageName` varchar(200) DEFAULT NULL,
+--   `candidateSize1` int(11) DEFAULT NULL,
+--   `candidate1` varchar(500) DEFAULT NULL,
+--   `argWords1` int(11) DEFAULT NULL,
+--   `paraWords1` int(11) DEFAULT NULL,
+--   `termBasedSim1` double DEFAULT NULL,
+--   `maxTermBasedSim1` double DEFAULT NULL,
+--   `editBasedSim1` double DEFAULT NULL,
+--   `maxEditBasedSim1` double DEFAULT NULL,
+--   `jeroBasedSim1` double DEFAULT NULL,
+--   `maxJeroBasedSim1` double DEFAULT NULL,
+--   `candidateSize2` int(11) DEFAULT NULL,
+--   `candidate2` varchar(500) DEFAULT NULL,
+--   `argWords2` int(11) DEFAULT NULL,
+--   `paraWords2` int(11) DEFAULT NULL,
+--   `termBasedSim2` double DEFAULT NULL,
+--   `maxTermBasedSim2` double DEFAULT NULL,
+--   `editBasedSim2` double DEFAULT NULL,
+--   `maxEditBasedSim2` double DEFAULT NULL,
+--   `jeroBasedSim2` double DEFAULT NULL,
+--   `maxJeroBasedSim2` double DEFAULT NULL,
+--   `candidateSize3` int(11) DEFAULT NULL,
+--   `candidate3` varchar(500) DEFAULT NULL,
+--   `argWords3` int(11) DEFAULT NULL,
+--   `paraWords3` int(11) DEFAULT NULL,
+--   `termBasedSim3` double DEFAULT NULL,
+--   `maxTermBasedSim3` double DEFAULT NULL,
+--   `editBasedSim3` double DEFAULT NULL,
+--   `maxEditBasedSim3` double DEFAULT NULL,
+--   `jeroBasedSim3` double DEFAULT NULL,
+--   `maxJeroBasedSim3` double DEFAULT NULL,
+--   `candidateSize4` int(11) DEFAULT NULL,
+--   `candidate4` varchar(500) DEFAULT NULL,
+--   `argWords4` int(11) DEFAULT NULL,
+--   `paraWords4` int(11) DEFAULT NULL,
+--   `termBasedSim4` double DEFAULT NULL,
+--   `maxTermBasedSim4` double DEFAULT NULL,
+--   `editBasedSim4` double DEFAULT NULL,
+--   `maxEditBasedSim4` double DEFAULT NULL,
+--   `jeroBasedSim4` double DEFAULT NULL,
+--   `maxJeroBasedSim4` double DEFAULT NULL,
+--   `candidateSize5` int(11) DEFAULT NULL,
+--   `candidate5` varchar(500) DEFAULT NULL,
+--   `argWords5` int(11) DEFAULT NULL,
+--   `paraWords5` int(11) DEFAULT NULL,
+--   `termBasedSim5` double DEFAULT NULL,
+--   `maxTermBasedSim5` double DEFAULT NULL,
+--   `editBasedSim5` double DEFAULT NULL,
+--   `maxEditBasedSim5` double DEFAULT NULL,
+--   `jeroBasedSim5` double DEFAULT NULL,
+--   `maxJeroBasedSim5` double DEFAULT NULL,
+--   `candidateSize6` int(11) DEFAULT NULL,
+--   `candidate6` varchar(500) DEFAULT NULL,
+--   `argWords6` int(11) DEFAULT NULL,
+--   `paraWords6` int(11) DEFAULT NULL,
+--   `termBasedSim6` double DEFAULT NULL,
+--   `maxTermBasedSim6` double DEFAULT NULL,
+--   `editBasedSim6` double DEFAULT NULL,
+--   `maxEditBasedSim6` double DEFAULT NULL,
+--   `jeroBasedSim6` double DEFAULT NULL,
+--   `maxJeroBasedSim6` double DEFAULT NULL,
+--   `candidateSize7` int(11) DEFAULT NULL,
+--   `candidate7` varchar(500) DEFAULT NULL,
+--   `argWords7` int(11) DEFAULT NULL,
+--   `paraWords7` int(11) DEFAULT NULL,
+--   `termBasedSim7` double DEFAULT NULL,
+--   `maxTermBasedSim7` double DEFAULT NULL,
+--   `editBasedSim7` double DEFAULT NULL,
+--   `maxEditBasedSim7` double DEFAULT NULL,
+--   `jeroBasedSim7` double DEFAULT NULL,
+--   `maxJeroBasedSim7` double DEFAULT NULL,
+--   `projectName` varchar(100) DEFAULT NULL,
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+-- 
+-- select count(*) from methodinvocations;
+-- select count(*) from simpletermarguments where jero!=0
+-- create table simpleprimitivearguments select * from simpletermarguments where argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- create table simpleapiarguments select * from simpletermarguments where packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%';
+-- select * from simpletermarguments where argumentType like '%[]%'
+
+-- insert into methodarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName1,parameterType1,parameterName1,argWords1,paraWords1,methodName,className,packageName,superClassName,superPackageName,candidateSize1,termBasedSim1,maxTermBasedSim1,editBasedSim1,maxEditBasedSim1,jeroBasedSim1,maxJeroBasedSim1 from methodinvocations where argumentName1!='';
+-- insert into methodarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName2,parameterType2,parameterName2,argWords2,paraWords2,methodName,className,packageName,superClassName,superPackageName,candidateSize2,termBasedSim2,maxTermBasedSim2,editBasedSim2,maxEditBasedSim2,jeroBasedSim2,maxJeroBasedSim2 from methodinvocations where argumentName2!='';
+-- insert into methodarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName3,parameterType3,parameterName3,argWords3,paraWords3,methodName,className,packageName,superClassName,superPackageName,candidateSize3,termBasedSim3,maxTermBasedSim3,editBasedSim3,maxEditBasedSim3,jeroBasedSim3,maxJeroBasedSim3 from methodinvocations where argumentName3!='';
+-- insert into methodarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName4,parameterType4,parameterName4,argWords4,paraWords4,methodName,className,packageName,superClassName,superPackageName,candidateSize4,termBasedSim4,maxTermBasedSim4,editBasedSim4,maxEditBasedSim4,jeroBasedSim4,maxJeroBasedSim4 from methodinvocations where argumentName4!='';
+-- insert into methodarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName5,parameterType5,parameterName5,argWords5,paraWords5,methodName,className,packageName,superClassName,superPackageName,candidateSize5,termBasedSim5,maxTermBasedSim5,editBasedSim5,maxEditBasedSim5,jeroBasedSim5,maxJeroBasedSim5 from methodinvocations where argumentName5!='';
+-- insert into methodarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName6,parameterType6,parameterName6,argWords6,paraWords6,methodName,className,packageName,superClassName,superPackageName,candidateSize6,termBasedSim6,maxTermBasedSim6,editBasedSim6,maxEditBasedSim6,jeroBasedSim6,maxJeroBasedSim6 from methodinvocations where argumentName6!='';
+-- insert into methodarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName7,parameterType7,parameterName7,argWords7,paraWords7,methodName,className,packageName,superClassName,superPackageName,candidateSize7,termBasedSim7,maxTermBasedSim7,editBasedSim7,maxEditBasedSim7,jeroBasedSim7,maxJeroBasedSim7 from methodinvocations where argumentName7!='';
+
+-- select count(*) from simpleapiarguments where sim=0 and parameterName in('item','index','key','value');
+-- select count(*) from simpletermarguments where sim=0 and parameterName in('item','index','key','value');
+-- create table simpleapiargumentssim0 select * from simpleapiarguments where sim=0;
+-- select parameterName,count(*) from simpleapiargumentssim0 group by parameterName order by count(*) desc;
+-- select count(*) from simpleapiargumentssim0
+-- select packageName,count(*) from simpleapiargumentssim0 group by packageName order by count(*) desc;
+-- select count(*) from simpletermarguments where argWords=4 and paraWords=4;
+-- select count(*) from simpletermarguments where sim=1 and argWords=4 and paraWords=4;
+-- create table noutn select argumentName,parameterName,argWords,paraWords,sim,(argWords+paraWords)*sim from simpletermarguments;
+-- select count(*) from noutn where (argWords+paraWords)=2 and frac=2;
+-- select * from simpletermarguments where argWords=0;
+
+-- create table sun select * from simpleinvocations;
+-- create table father select * from simpleinvocations;
+-- delete from methoddeclarations;
+-- select * from simpleinvocations where parameterType1=''
+-- drop table overriddens;
+-- create table overriddens select sun.*,
+-- 	father.parameterName1 fparameterName1,
+-- 	father.parameterName2 fparameterName2,
+-- 	father.parameterName3 fparameterName3,
+-- 	father.parameterName4 fparameterName4,
+-- 	father.parameterName5 fparameterName5,
+-- 	father.parameterName6 fparameterName6,
+-- 	father.parameterName7 fparameterName7,
+-- 	father.parameterType1 fparameterType1,
+-- 	father.parameterType2 fparameterType2,
+-- 	father.parameterType3 fparameterType3,
+-- 	father.parameterType4 fparameterType4,
+-- 	father.parameterType5 fparameterType5,
+-- 	father.parameterType6 fparameterType6,
+-- 	father.parameterType7 fparameterType7
+--  from sun,father where sun.methodName=father.methodName and sun.superClassName=father.className and sun.superPackageName=father.packageName and sun.parameterNum=father.parameterNum 
+-- --  and sun.parameterType1 is not null 
+-- and sun.parameterType2 is not null 
+-- and sun.parameterType3 is not null 
+-- and sun.parameterType4 is not null 
+-- and sun.parameterType5 is not null 
+-- and sun.parameterType6 is not null 
+-- and sun.parameterType7 is not null 
+-- and sun.parameterType1=father.parameterType1  
+-- and sun.parameterType2=father.parameterType2 
+-- and sun.parameterType3=father.parameterType3 
+-- and sun.parameterType4=father.parameterType4 
+-- and sun.parameterType5=father.parameterType5 
+-- and sun.parameterType6=father.parameterType6 
+-- and sun.parameterType7=father.parameterType7 
+-- and sun.projectName not like '1%' 
+-- and father.projectName not like '1%'
+-- -- 
+-- select count(*) from jero;
+-- select count(*) from simpleinvocations;
+-- delete from jero where projectName like 't%' or projectName like 'u%' or projectName like 'v%' or projectName like 'w%' or  projectName like 'x%' or  projectName like 'y%' 
+
+-- -- create table jeroarguments select * from simpletermarguments where 1=0;
+-- delete from jeroarguments;
+-- insert into jeroarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName1,parameterType1,parameterName1,argWords1,paraWords1,methodName,className,packageName,superClassName,superPackageName,candidateSize1,termBasedSim1,maxTermBasedSim1,editBasedSim1,maxEditBasedSim1,jeroBasedSim1,maxJeroBasedSim1 from jero where argumentName1!='';
+-- insert into jeroarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName2,parameterType2,parameterName2,argWords2,paraWords2,methodName,className,packageName,superClassName,superPackageName,candidateSize2,termBasedSim2,maxTermBasedSim2,editBasedSim2,maxEditBasedSim2,jeroBasedSim2,maxJeroBasedSim2 from jero where argumentName2!='';
+-- insert into jeroarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName3,parameterType3,parameterName3,argWords3,paraWords3,methodName,className,packageName,superClassName,superPackageName,candidateSize3,termBasedSim3,maxTermBasedSim3,editBasedSim3,maxEditBasedSim3,jeroBasedSim3,maxJeroBasedSim3 from jero where argumentName3!='';
+-- insert into jeroarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName4,parameterType4,parameterName4,argWords4,paraWords4,methodName,className,packageName,superClassName,superPackageName,candidateSize4,termBasedSim4,maxTermBasedSim4,editBasedSim4,maxEditBasedSim4,jeroBasedSim4,maxJeroBasedSim4 from jero where argumentName4!='';
+-- insert into jeroarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName5,parameterType5,parameterName5,argWords5,paraWords5,methodName,className,packageName,superClassName,superPackageName,candidateSize5,termBasedSim5,maxTermBasedSim5,editBasedSim5,maxEditBasedSim5,jeroBasedSim5,maxJeroBasedSim5 from jero where argumentName5!='';
+-- insert into jeroarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName6,parameterType6,parameterName6,argWords6,paraWords6,methodName,className,packageName,superClassName,superPackageName,candidateSize6,termBasedSim6,maxTermBasedSim6,editBasedSim6,maxEditBasedSim6,jeroBasedSim6,maxJeroBasedSim6 from jero where argumentName6!='' ;
+-- insert into jeroarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName7,parameterType7,parameterName7,argWords7,paraWords7,methodName,className,packageName,superClassName,superPackageName,candidateSize7,termBasedSim7,maxTermBasedSim7,editBasedSim7,maxEditBasedSim7,jeroBasedSim7,maxJeroBasedSim7 from jero where argumentName7!='';
+-- 
+-- create table thisarguments select * from simpletermarguments where 1=0;
+-- insert into thisarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName1,parameterType1,parameterName1,argWords1,paraWords1,methodName,className,packageName,superClassName,superPackageName,candidateSize1,termBasedSim1,maxTermBasedSim1,editBasedSim1,maxEditBasedSim1,jeroBasedSim1,maxjeroBasedSim1 from thisinvocations where argumentName1!='';
+-- insert into thisarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName2,parameterType2,parameterName2,argWords2,paraWords2,methodName,className,packageName,superClassName,superPackageName,candidateSize2,termBasedSim2,maxTermBasedSim2,editBasedSim2,maxEditBasedSim2,jeroBasedSim2,maxjeroBasedSim2 from thisinvocations where argumentName2!='';
+-- insert into thisarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName3,parameterType3,parameterName3,argWords3,paraWords3,methodName,className,packageName,superClassName,superPackageName,candidateSize3,termBasedSim3,maxTermBasedSim3,editBasedSim3,maxEditBasedSim3,jeroBasedSim3,maxjeroBasedSim3 from thisinvocations where argumentName3!='';
+-- insert into thisarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName4,parameterType4,parameterName4,argWords4,paraWords4,methodName,className,packageName,superClassName,superPackageName,candidateSize4,termBasedSim4,maxTermBasedSim4,editBasedSim4,maxEditBasedSim4,jeroBasedSim4,maxjeroBasedSim4 from thisinvocations where argumentName4!='';
+-- insert into thisarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName5,parameterType5,parameterName5,argWords5,paraWords5,methodName,className,packageName,superClassName,superPackageName,candidateSize5,termBasedSim5,maxTermBasedSim5,editBasedSim5,maxEditBasedSim5,jeroBasedSim5,maxjeroBasedSim5 from thisinvocations where argumentName5!='';
+-- insert into thisarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName6,parameterType6,parameterName6,argWords6,paraWords6,methodName,className,packageName,superClassName,superPackageName,candidateSize6,termBasedSim6,maxTermBasedSim6,editBasedSim6,maxEditBasedSim6,jeroBasedSim6,maxjeroBasedSim6 from thisinvocations where argumentName6!='' ;
+-- insert into thisarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+--  select parameterNum,argumentName7,parameterType7,parameterName7,argWords7,paraWords7,methodName,className,packageName,superClassName,superPackageName,candidateSize7,termBasedSim7,maxTermBasedSim7,editBasedSim7,maxEditBasedSim7,jeroBasedSim7,maxjeroBasedSim7 from thisinvocations where argumentName7!='';
+-- 
+-- insert into thisarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+-- select parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero from methodarguments;
+-- insert into thisarguments(parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero) 
+-- select parameterNum,argumentName,argumentType,parameterName,argWords,paraWords,methodName,className,packageName,superClassName,superPackageName,candidateSize,sim,maxsim,edit,maxedit,jero,maxjero from fieldarguments;
+
+-- create table simplenonapiarguments select * from simpletermarguments where packageName not like 'java.%' and packageName not like 'javax.%' and packageName not like 'org.ietf.%' and packageName not like 'org.omg.%' and packageName not like 'org.w3c.%' and packageName not like 'org.xml.%';
+
+-- select count(*) from simplenonapiarguments where sim=0;
+-- select count(*) from simplenonapiarguments where sim>0 and sim<0.1;
+-- select count(*) from simplenonapiarguments where sim>=0.1 and sim<0.2;
+-- select count(*) from simplenonapiarguments where sim>=0.2 and sim<0.3;
+-- select count(*) from simplenonapiarguments where sim>=0.3 and sim<0.4;
+-- select count(*) from simplenonapiarguments where sim>=0.4 and sim<0.5;
+-- select count(*) from simplenonapiarguments where sim>=0.5 and sim<0.6;
+-- select count(*) from simplenonapiarguments where sim>=0.6 and sim<0.7;
+-- select count(*) from simplenonapiarguments where sim>=0.7 and sim<0.8;
+-- select count(*) from simplenonapiarguments where sim>=0.8 and sim<0.9;
+-- select count(*) from simplenonapiarguments where sim>=0.9 and sim<1;
+-- select count(*) from simplenonapiarguments where sim=1;
+-- select count(*) from simplenonapiarguments;
+-- select * from jero where methodName='multiply'
+
+-- create table overridens select sun.*,
+-- 	father.parameterName1 fparameterName1,
+-- 	father.parameterName2 fparameterName2,
+-- 	father.parameterName3 fparameterName3,
+-- 	father.parameterName4 fparameterName4,
+-- 	father.parameterName5 fparameterName5,
+-- 	father.parameterName6 fparameterName6,
+-- 	father.parameterName7 fparameterName7,
+-- 	father.parameterType1 fparameterType1,
+-- 	father.parameterType2 fparameterType2,
+-- 	father.parameterType3 fparameterType3,
+-- 	father.parameterType4 fparameterType4,
+-- 	father.parameterType5 fparameterType5,
+-- 	father.parameterType6 fparameterType6,
+-- 	father.parameterType7 fparameterType7
+--  from sun,father where 
+-- sun.methodName=father.methodName and 
+-- sun.superClassName=father.className and 
+-- sun.superPackageName=father.packageName and 
+-- sun.parameterNum=father.parameterNum 
+-- and sun.projectName not like '1%'
+-- and father.projectName not like '1%';
+-- select count(*) from overridens2 #2千万
+-- select count(methodName) from overridens2 group by methodName;
+-- create table overridens2 select sun.*,
+-- 	father.parameterName1 fparameterName1,
+-- 	father.parameterName2 fparameterName2,
+-- 	father.parameterName3 fparameterName3,
+-- 	father.parameterName4 fparameterName4,
+-- 	father.parameterName5 fparameterName5,
+-- 	father.parameterName6 fparameterName6,
+-- 	father.parameterName7 fparameterName7,
+-- 	father.parameterType1 fparameterType1,
+-- 	father.parameterType2 fparameterType2,
+-- 	father.parameterType3 fparameterType3,
+-- 	father.parameterType4 fparameterType4,
+-- 	father.parameterType5 fparameterType5,
+-- 	father.parameterType6 fparameterType6,
+-- 	father.parameterType7 fparameterType7
+--  from sun,father where 
+-- sun.superClassName is not null AND
+-- sun.className is not null and
+-- sun.methodName=father.methodName and 
+-- sun.superClassName=father.className and 
+-- sun.superPackageName=father.packageName and 
+-- sun.parameterNum=father.parameterNum 
+-- and sun.projectName not like '1%'
+-- and father.projectName not like '1%';
+
+-- select count(*) from simpletermarguments where sim=0 and LENGTH(parameterName)=1;
+-- select count(*) from simpletermarguments where sim=0 and LENGTH(parameterName)<=3;
+-- select count(*) from simpletermarguments where sim=0 and parameterName in('index','key','value','item');
+-- select count(*) from simpleprimitivearguments where sim=0;
+-- select count(*) from simpleprimitivearguments where sim=0 and LENGTH(parameterName)=1;
+-- select count(*) from simpleprimitivearguments where sim=0 and LENGTH(parameterName)<=3;
+-- select count(*) from simpleprimitivearguments where sim=0 and parameterName in('index','key','value','item');
+-- select count(*) from simpleapiarguments where sim=0;
+-- select count(*) from simpleapiarguments where sim=0 and LENGTH(parameterName)=1;
+-- select count(*) from simpleapiarguments where sim=0 and LENGTH(parameterName)<=3;
+-- select count(*) from simpleapiarguments where sim=0 and parameterName in('index','key','value','item');
+
+-- create table temp select * from simpletermarguments where sim=0
+-- drop table rq4sample200;
+-- create table RQ4sample200 select * from temp order by RAND() limit 200;
+
+--  select count(*) from rq4sample200 where LENGTH(parameterName)=1;
+--  select count(*) from rq4sample200 where LENGTH(parameterName)<=3;
+--  select count(*) from rq4sample200 where parameterName in('index','key','value','item');
+
+-- create table RQ5lowsimparameters select parameterName from simpletermarguments group by parameterName having avg(sim)<0.5;
+-- create table rq5lowsimall select * from simpletermarguments where parameterName not in(select parameterName from rq5lowsimparameters);
+-- select count(*) from rq5lowsimall where sim=0;
+-- select count(*) from rq5lowsimall where sim>0 and sim<0.1;
+-- select count(*) from rq5lowsimall where sim>=0.1 and sim<0.2;
+-- select count(*) from rq5lowsimall where sim>=0.2 and sim<0.3;
+-- select count(*) from rq5lowsimall where sim>=0.3 and sim<0.4;
+-- select count(*) from rq5lowsimall where sim>=0.4 and sim<0.5;
+-- select count(*) from rq5lowsimall where sim>=0.5 and sim<0.6;
+-- select count(*) from rq5lowsimall where sim>=0.6 and sim<0.7;
+-- select count(*) from rq5lowsimall where sim>=0.7 and sim<0.8;
+-- select count(*) from rq5lowsimall where sim>=0.8 and sim<0.9;
+-- select count(*) from rq5lowsimall where sim>=0.9 and sim<1;
+-- select count(*) from rq5lowsimall where sim=1;
+-- select count(*) from rq5lowsimall;
+-- select count(*) from rq5lowsimall where sim=0 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>0 and sim<0.1 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>=0.1 and sim<0.2 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>=0.2 and sim<0.3 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>=0.3 and sim<0.4 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>=0.4 and sim<0.5 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>=0.5 and sim<0.6 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>=0.6 and sim<0.7 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>=0.7 and sim<0.8 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>=0.8 and sim<0.9 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim>=0.9 and sim<1 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where sim=1 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5lowsimall where argumentType in('byte','char','boolean','short','int','long','float','double','string');
+
+-- select count(*) from rq5lowsimall where sim=0 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>0 and sim<0.1 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>=0.1 and sim<0.2 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>=0.2 and sim<0.3 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>=0.3 and sim<0.4 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>=0.4 and sim<0.5 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>=0.5 and sim<0.6 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>=0.6 and sim<0.7 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>=0.7 and sim<0.8 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>=0.8 and sim<0.9 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim>=0.9 and sim<1 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where sim=1 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5lowsimall where (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- 
+-- 
+#(packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+
+-- create table rq5filteredout select * from simpletermarguments where parameterName in(select parameterName from rq5lowsimparameters);
+-- select count(*) from rq5filteredout where sim=0;
+-- select count(*) from rq5filteredout where sim>0 and sim<0.1;
+-- select count(*) from rq5filteredout where sim>=0.1 and sim<0.2;
+-- select count(*) from rq5filteredout where sim>=0.2 and sim<0.3;
+-- select count(*) from rq5filteredout where sim>=0.3 and sim<0.4;
+-- select count(*) from rq5filteredout where sim>=0.4 and sim<0.5;
+-- select count(*) from rq5filteredout where sim>=0.5 and sim<0.6;
+-- select count(*) from rq5filteredout where sim>=0.6 and sim<0.7;
+-- -- select count(*) from rq5filteredout where sim>=0.7 and sim<0.8;
+-- select count(*) from rq5filteredout where sim>=0.8 and sim<0.9;
+-- select count(*) from rq5filteredout where sim>=0.9 and sim<1;
+-- select count(*) from rq5filteredout where sim=1;
+-- select count(*) from rq5filteredout;
+
+-- select count(*) from rq5filteredout where sim=0 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>0 and sim<0.1 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>=0.1 and sim<0.2 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>=0.2 and sim<0.3 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>=0.3 and sim<0.4 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>=0.4 and sim<0.5 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>=0.5 and sim<0.6 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>=0.6 and sim<0.7 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>=0.7 and sim<0.8 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>=0.8 and sim<0.9 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim>=0.9 and sim<1 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where sim=1 and argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- select count(*) from rq5filteredout where argumentType in('byte','char','boolean','short','int','long','float','double','string');
+-- 
+-- select count(*) from rq5filteredout where sim=0 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>0 and sim<0.1 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>=0.1 and sim<0.2 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>=0.2 and sim<0.3 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>=0.3 and sim<0.4 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>=0.4 and sim<0.5 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>=0.5 and sim<0.6 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>=0.6 and sim<0.7 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>=0.7 and sim<0.8 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>=0.8 and sim<0.9 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim>=0.9 and sim<1 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where sim=1 and (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- select count(*) from rq5filteredout where (packageName like 'java.%' or packageName like 'javax.%' or packageName like 'org.ietf.%' or packageName like 'org.omg.%' or packageName like 'org.w3c.%' or packageName like 'org.xml.%');
+-- 
+-- select count(*) from simpletermarguments where candidatesize>0;#249438
+-- select count(*) from simpletermarguments where candidatesize>0 and maxsim>sim;
+-- select count(*) from simpletermarguments where candidatesize>0 and maxsim<sim;
+-- select count(*) from rq5lowsimall;
+-- select count(*) from rq5lowsimall where candidateSize>0;
+-- select count(*) from rq5lowsimall where candidateSize>0 and candidatesize>0 and maxsim<sim;
+-- select count(*) from simpleprimitivearguments;
+-- select count(*) from simpleprimitivearguments where candidatesize>0;
+-- select count(*) from simpleapiarguments;
+-- select count(*) from simpleapiarguments where candidatesize>0;
+
+-- select count(*) from simpleprimitivearguments where candidatesize>0 and sim>maxsim;
+-- select count(*) from simpleprimitivearguments where parameterName not in(select parameterName from rq5lowsimparameters);
+-- select count(*) from simpleprimitivearguments where candidatesize>0 and parameterName not in(select parameterName from rq5lowsimparameters);
+-- select count(*) from simpleprimitivearguments where candidatesize>0 and sim>maxsim and parameterName not in(select parameterName from rq5lowsimparameters);
+-- 
+-- select count(*) from simpleapiarguments where candidatesize>0;
+-- select count(*) from simpleapiarguments where candidatesize>0 and sim>maxsim;
+-- select count(*) from simpleapiarguments where candidatesize>0 and parameterName not in(select parameterName from rq5lowsimparameters);
+-- select count(*) from simpleapiarguments where candidatesize>0 and sim>maxsim and parameterName not in(select parameterName from rq5lowsimparameters);
+-- 
+-- select count(*) from simpleapiarguments where candidatesize>0 and sim>0.667;
+-- select count(*) from simpleapiarguments where candidatesize>0 and sim>0.667 and sim>maxsim;
+-- 
+
+-- select count(*) from simpletermarguments where edit=0;
+-- select count(*) from simpletermarguments where edit>0 and edit<0.1;
+-- select count(*) from simpletermarguments where edit>=0.1 and edit<0.2;
+-- select count(*) from simpletermarguments where edit>=0.2 and edit<0.3;
+-- select count(*) from simpletermarguments where edit>=0.3 and edit<0.4;
+-- select count(*) from simpletermarguments where edit>=0.4 and edit<0.5;
+-- select count(*) from simpletermarguments where edit>=0.5 and edit<0.6;
+-- select count(*) from simpletermarguments where edit>=0.6 and edit<0.7;
+-- select count(*) from simpletermarguments where edit>=0.7 and edit<0.8;
+-- select count(*) from simpletermarguments where edit>=0.8 and edit<0.9;
+-- select count(*) from simpletermarguments where edit>=0.9 and edit<1;
+-- select count(*) from simpletermarguments where edit=1;
+-- select count(*) from simpletermarguments;
+
+-- select count(*) from simpletermarguments where jero=0;
+-- select count(*) from simpletermarguments where jero>0 and jero<0.1;
+-- select count(*) from simpletermarguments where jero>=0.1 and jero<0.2;
+-- select count(*) from simpletermarguments where jero>=0.2 and jero<0.3;
+-- select count(*) from simpletermarguments where jero>=0.3 and jero<0.4;
+-- select count(*) from simpletermarguments where jero>=0.4 and jero<0.5;
+-- select count(*) from simpletermarguments where jero>=0.5 and jero<0.6;
+-- select count(*) from simpletermarguments where jero>=0.6 and jero<0.7;
+-- select count(*) from simpletermarguments where jero>=0.7 and jero<0.8;
+-- select count(*) from simpletermarguments where jero>=0.8 and jero<0.9;
+-- select count(*) from simpletermarguments where jero>=0.9 and jero<1;
+-- select count(*) from simpletermarguments where jero=1;
+-- select count(*) from simpletermarguments;
+
+
+#低相似度
+-- create table RQ7loweditparameters select parameterName from simpletermarguments group by parameterName having avg(edit)<0.5;
+-- create table RQ7loweditall select * from simpletermarguments where parameterName not in(select parameterName from RQ7loweditparameters);
+
+-- create table RQ7lowjeroparameters select parameterName from simpletermarguments group by parameterName having avg(jero)<0.5;
+-- create table RQ7lowjeroall select * from simpletermarguments where parameterName not in(select parameterName from RQ7lowjeroparameters);
+-- 
+-- 
+-- select count(*) from simpletermarguments where edit=0;
+-- select count(*) from RQ7loweditall where edit=0;
+-- select count(*) from simpletermarguments where jero=0;
+-- select count(*) from RQ7lowjeroall where jero=0;
+
+-- select count(*) from RQ7loweditall where candidateSize>0;
+-- select count(*) from RQ7loweditall where candidateSize>0 and edit>maxedit;
+
+-- select count(*) from RQ7lowjeroall where candidateSize>0;
+-- select count(*) from RQ7lowjeroall where candidateSize>0 and jero>maxjero;
+-- 
+-- -- create table jero select * from simpleinvocations where 1=0; 
+-- -- 
+-- select count(*) from rq7loweditall where edit=0;
+-- select count(*) from rq7loweditall where edit>0 and edit<0.1;
+-- select count(*) from rq7loweditall where edit>=0.1 and edit<0.2;
+-- select count(*) from rq7loweditall where edit>=0.2 and edit<0.3;
+-- select count(*) from rq7loweditall where edit>=0.3 and edit<0.4;
+-- select count(*) from rq7loweditall where edit>=0.4 and edit<0.5;
+-- select count(*) from rq7loweditall where edit>=0.5 and edit<0.6;
+-- select count(*) from rq7loweditall where edit>=0.6 and edit<0.7;
+-- select count(*) from rq7loweditall where edit>=0.7 and edit<0.8;
+-- select count(*) from rq7loweditall where edit>=0.8 and edit<0.9;
+-- select count(*) from rq7loweditall where edit>=0.9 and edit<1;
+-- select count(*) from rq7loweditall where edit=1;
+-- select count(*) from rq7loweditall;
+-- -- 
+-- select count(*) from rq7lowjeroall where jero=0;
+-- select count(*) from rq7lowjeroall where jero>0 and jero<0.1;
+-- select count(*) from rq7lowjeroall where jero>=0.1 and jero<0.2;
+-- select count(*) from rq7lowjeroall where jero>=0.2 and jero<0.3;
+-- select count(*) from rq7lowjeroall where jero>=0.3 and jero<0.4;
+-- select count(*) from rq7lowjeroall where jero>=0.4 and jero<0.5;
+-- select count(*) from rq7lowjeroall where jero>=0.5 and jero<0.6;
+-- select count(*) from rq7lowjeroall where jero>=0.6 and jero<0.7;
+-- select count(*) from rq7lowjeroall where jero>=0.7 and jero<0.8;
+-- select count(*) from rq7lowjeroall where jero>=0.8 and jero<0.9;
+-- select count(*) from rq7lowjeroall where jero>=0.9 and jero<1;
+-- select count(*) from rq7lowjeroall where jero=1;
+-- select count(*) from rq7lowjeroall;
+-- select count(*) from simpletermarguments where candidatesize>0;
+-- select count(*) from simpletermarguments where candidatesize>0 and edit>maxedit;
+-- select count(*) from jeroarguments where candidatesize>0;
+-- select count(*) from jeroarguments where candidatesize>0 and jero>maxjero;
+-- create table RQ7lowjeroparameters2 select parameterName from jeroarguments group by parameterName having avg(jero)<0.5;
+-- create table RQ7lowjeroall2 select * from jeroarguments where parameterName not in(select parameterName from RQ7lowjeroparameters2);
+-- select count(*) from RQ7lowjeroall2 where candidatesize>0;
+-- select count(*) from RQ7lowjeroall2 where candidatesize>0 and jero>maxjero;
+-- select count(*) from thisarguments where sim=0;
+-- select count(*) from thisarguments where sim>0 and sim<0.1;
+-- select count(*) from thisarguments where sim>=0.1 and sim<0.2;
+-- select count(*) from thisarguments where sim>=0.2 and sim<0.3;
+-- select count(*) from thisarguments where sim>=0.3 and sim<0.4;
+-- select count(*) from thisarguments where sim>=0.4 and sim<0.5;
+-- select count(*) from thisarguments where sim>=0.5 and sim<0.6;
+-- select count(*) from thisarguments where sim>=0.6 and sim<0.7;
+-- select count(*) from thisarguments where sim>=0.7 and sim<0.8;
+-- select count(*) from thisarguments where sim>=0.8 and sim<0.9;
+-- select count(*) from thisarguments where sim>=0.9 and sim<1;
+-- select count(*) from thisarguments where sim=1;
+-- select count(*) from thisarguments;
+-- select argumentName,parameterName,sim from simpletermarguments where sim!=1 and sim!=0 order by argWords desc
+-- select count(*) from rq7loweditall where candidatesize>0;
+-- select argumentName,parameterName from rq4sample200
+-- select * from simpletermarguments  where argumentName!=parameterName and sim!=0 order by argWords desc
